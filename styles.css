@@ -766,7 +766,7 @@ nav {
 .projects-section {
     position: relative;
     background-color: #000000;
-    min-height: 1050px; /* Aumentado de 800px a 1000px para hacer el fondo negro más grande */
+    min-height: 1000px; /* Aumentado de 800px a 1000px para hacer el fondo negro más grande */
     width: 100%;
     overflow: hidden;
 }
@@ -776,7 +776,7 @@ nav {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    min-height: 1050px; /* Aumentado de 800px a 1000px para coincidir con la sección */
+    min-height: 1000px; /* Aumentado de 800px a 1000px para coincidir con la sección */
 }
 
 /* Círculo de luz en el centro */
@@ -833,7 +833,7 @@ nav {
 
 /* Estilos de la imagen */
 .project-image {
-    max-width: 500px; /* Reducido de 550px a 500px */
+    max-width: 680px; /* Reducido de 550px a 500px */
     height: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     margin: 0;
