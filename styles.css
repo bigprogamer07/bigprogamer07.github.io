@@ -1743,7 +1743,7 @@ nav {
     display: inline-block;
     position: absolute;
     top: 50%;
-    left: calc(100% - 30%); /* Posicionamos el texto para que el borde derecho (excepto la última "M") esté en el borde derecho de la pantalla */
+    left: calc(100% - 38%); /* Posicionamos el texto para que el borde derecho (excepto la última "M") esté en el borde derecho de la pantalla */
     transform: translate(0, -50%); /* Solo centramos verticalmente */
     transition: transform 0.1s linear;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
