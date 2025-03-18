@@ -2117,3 +2117,65 @@ nav {
         margin-top: 5px;
     }
 }
+/* Sección de Proyectos (Ajustada para Spline) */
+.projects-section {
+    position: relative;
+    background-color: #000000; /* Fondo negro para coincidir con la imagen */
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Contenedor intermedio para el visor de Spline */
+.spline-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Detrás de las barras de navegación */
+}
+
+/* Ajuste del visor de Spline */
+spline-viewer {
+    width: calc(100% - 40px); /* Resta 40px (20px de margen a cada lado) */
+    height: calc(100% - 40px); /* Resta 40px (20px de margen arriba y abajo) */
+    display: block;
+    margin: 20px; /* Margen de 20px alrededor del visor */
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Aseguramos que las barras de navegación estén por encima del visor */
+nav, .bottom-bar, .contact-sidebar {
+    z-index: 2; /* Colocamos las barras por encima del visor */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .projects-section {
+        height: 100vh; /* Mantiene la altura completa */
+    }
+
+    spline-viewer {
+        width: calc(100% - 30px); /* Margen más pequeño para pantallas medianas */
+        height: calc(100% - 30px);
+        margin: 15px; /* Margen de 15px en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        height: 100vh; /* Mantiene la altura completa */
+    }
+
+    spline-viewer {
+        width: calc(100% - 20px); /* Margen más pequeño para pantallas pequeñas */
+        height: calc(100% - 20px);
+        margin: 10px; /* Margen de 10px en pantallas pequeñas */
+    }
+}
