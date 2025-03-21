@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Inspirado</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importar las fuentes Montserrat y Playfair Display desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="mainNav">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Barra deslizante -->
+    <div class="contact-bar" id="contactBar">
+        <div class="contact-bar-content">
+            <div class="contact-bar-logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h2>¡Contactanos!</h2>
+            <div class="contact-info">
+                <p>
+                    <svg class="icon phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <a href="https://wa.link/pu18zw" style="text-decoration: none; color: inherit;">+ (57) 305 314 48 04</a>
+                </p>
+                <p>
+                    <svg class="icon email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Momentum@gmail.com
+                </p>
+            </div>
+            <button class="close-btn" id="closeBtn">×</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" id="heroSection">
+            <div class="spline-hero-container">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/Jw-cflkBz3Itb1gq/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="hero-content">
+                <div class="subtitle">Momentum</div>
+                <h1>
+                    <span class="bold">Optimizamos</span><br>
+                    <span class="bold">Tus</span> <span class="bold">Procesos</span><br>
+                    <span class="bold">E</span> <span class="bold">Impulsamos</span><br>
+                    <span class="bold">Tu</span> <span class="bold">Empresa</span>
+                </h1>
+                <div class="hero-buttons">
+                    <a href="#soluciones" class="btn-primary">Soluciones</a>
+                    <a href="#hablemos" class="btn-secondary">Hablemos</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-circle">
+                        <svg class="robot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="none" stroke="#000" stroke-width="2"/>
+                            <circle cx="8" cy="10" r="2" fill="#000"/>
+                            <circle cx="16" cy="10" r="2" fill="#000"/>
+                            <path d="M8 16 Q12 18 16 16" fill="none" stroke="#000" stroke-width="2"/>
+                        </svg>
+                    </span>
+                    <a href="#" id="moreDetails">Años construyendo soluciones digitales<br>progresivas. <span class="details">Más Detalles</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección "Nuestros Servicios" -->
+        <section class="services-section">
+            <!-- Texto animado (marquee) al principio de la sección -->
+            <div class="marquee">
+                <div class="marquee-text">
+                    <span class="gray">Automatización</span> <span>—</span> <span class="black">Chat Bots</span> <span>—</span> <span class="gray">AI</span> <span>—</span> <span class="black">Desarrollo digital</span> <span>—</span>
+                    <span class="gray">Automatización</span> <span>—</span> <span class="black">Chat Bots</span> <span>—</span> <span class="gray">AI</span> <span>—</span> <span class="black">Desarrollo digital</span> <span>—</span>
+                </div>
+            </div>
+
+            <h2 class="services-title">NUESTROS<br>SERVICIOS</h2>
+            <div class="services-grid">
+                <!-- Servicio 1: Chat Personalizado y Automatización -->
+                <div class="service-item">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4m0-4h.01"/>
+                    </svg>
+                    <h3>Chat Bot y Asistente Telefonico Personalizado</h3>
+                    <p>Implementamos chats automatizados para atender a tus clientes 24/7, mejorando la experiencia del usuario.</p>
+                    <a href="#" class="solutions-toggle" data-target="solutions-1">Más Servicios</a>
+                    <ul class="solutions-list" id="solutions-1">
+                        <li>Integración con WhatsApp y Telegram</li>
+                        <li>Chatbots con respuestas personalizadas</li>
+                        <li>Automatización de atención al cliente</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2: GPT Personalizado -->
+                <div class="service-item">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+                        <path d="M12 2a10 10 0 0 0-10 10c0 5.5 4.5 10 10 10s10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    <h3>GPT Personalizado y Formacion de personal</h3>
+                    <p>Creamos modelos GPT adaptados a tus necesidades para generar contenido, responder preguntas y formar tu personal mediante conocimiento.</p>
+                    <a href="#" class="solutions-toggle" data-target="solutions-2">Más Servicios</a>
+                    <ul class="solutions-list" id="solutions-2">
+                        <li>Generación de contenido automatizado</li>
+                        <li>Respuestas personalizadas para tu negocio</li>
+                        <li>Gestion de inventarios de productos</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3: Responder Correos Automáticamente -->
+                <div class="service-item">
+                    <svg class="service-icon email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <h3>Creacion de paginas Web</h3>
+                    <p>Creamos tu pagina web con tecnologia de punta, como modelos 3d, implementacion de bots, y mas.</p>
+                    <a href="#" class="solutions-toggle" data-target="solutions-3">Más Servicios</a>
+                    <ul class="solutions-list" id="solutions-3">
+                        <li>Respuestas automáticas con IA</li>
+                        <li>Formación sin personal requerido</li>
+                        <li>Integración con Gmail y Outlook</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 4: Automatizar Facturas -->
+                <div class="service-item">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                    <h3>Automatizar Facturas</h3>
+                    <p>Simplificamos la generación y envío de facturas automáticas para tu negocio.</p>
+                    <a href="#" class="solutions-toggle" data-target="solutions-4">Más Servicios</a>
+                    <ul class="solutions-list" id="solutions-4">
+                        <li>Generación automática de facturas</li>
+                        <li>Envío programado a clientes</li>
+                        <li>Integración con sistemas contables</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services-buttons">
+                <a href="#" class="btn-secondary">Ver Todos los Servicios</a>
+                <a href="#" class="btn-primary">Empezar un Proyecto</a>
+            </div>
+        </section>
+
+        <!-- Nueva sección de imágenes marquee para clientes -->
+        <div class="clients-marquee">
+            <h3 class="clients-title">
+                <span class="clients-title-first">Nuestros</span><br>
+                <span class="clients-title-second">clientes</span>
+            </h3>
+            <div class="clients-marquee-content" id="clientsMarqueeContent">
+                <!-- Fila única de imágenes (8 originales + 8 duplicados) -->
+                <img src="1.png" alt="Client 1">
+                <img src="2.png" alt="Client 2">
+                <img src="3.png" alt="Client 3">
+                <img src="4.png" alt="Client 4">
+                <img src="5.png" alt="Client 5">
+                <img src="6.png" alt="Client 6">
+                <img src="7.png" alt="Client 7">
+                <!-- Duplicados para efecto continuo -->
+                <img src="1.png" alt="Client 1">
+                <img src="2.png" alt="Client 2">
+                <img src="3.png" alt="Client 3">
+                <img src="4.png" alt="Client 4">
+                <img src="5.png" alt="Client 5">
+                <img src="6.png" alt="Client 6">
+                <img src="7.png" alt="Client 7">
+            </div>
+        </div>
+        <div class="section-divider"></div> <!-- Línea divisoria añadida aquí -->
+
+        <!-- Sección de Proyectos (Reemplazada con código de Spline) -->
+        <section class="projects-section">
+            <div class="spline-container">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/tbKSnT-aTo7dBXm7/scene.splinecode"></spline-viewer>
+            </div>
+        </section>
+
+        <!-- Sección de Optimización con IA -->
+        <section class="ai-optimize">
+            <div class="ai-container">
+                <div class="ai-circle">
+                    <svg class="ai-icon" width="350" height="350" viewBox="0 0 350 350">
+                        <defs>
+                            <radialGradient id="aiGradient" cx="50%" cy="50%" r="70%">
+                                <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.9" />
+                                <stop offset="30%" style="stop-color:#6B48FF;stop-opacity:0.7" />
+                                <stop offset="100%" style="stop-color:#1A1A3D;stop-opacity:0" />
+                            </radialGradient>
+                            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                            <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#6B48FF;stop-opacity:0.5" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="175" cy="175" r="150" fill="url(#aiGradient)" />
+                        <circle cx="175" cy="175" r="150" fill="none" stroke="#6B48FF" stroke-width="2" stroke-dasharray="5 5" filter="url(#glow)" />
+                        <!-- Líneas curvas decorativas -->
+                        <path d="M120 100 Q150 80 180 100 Q210 80 240 100" fill="none" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+                        <path d="M120 150 Q150 130 180 150 Q210 130 240 150" fill="none" stroke="#6B48FF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+                        <path d="M120 200 Q150 180 180 200 Q210 180 240 200" fill="none" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+                        <!-- Puntos brillantes -->
+                        <circle cx="140" cy="100" r="4" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="210" cy="100" r="4" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+                        </circle>
+                        <circle cx="140" cy="150" r="4" fill="#4A90E2" opacity="0.9">
+                            <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="210" cy="150" r="4" fill="#4A90E2" opacity="0.9">
+                            <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+                        </circle>
+                        <circle cx="140" cy="200" r="4" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="210" cy="200" r="4" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+                        </circle>
+                        <!-- Círculos adicionales -->
+                        <circle cx="100" cy="120" r="3" fill="#4A90E2" opacity="0.7">
+                            <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="250" cy="120" r="3" fill="#6B48FF" opacity="0.7">
+                            <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+                        </circle>
+                        <circle cx="100" cy="230" r="3" fill="#4A90E2" opacity="0.7">
+                            <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="250" cy="230" r="3" fill="#6B48FF" opacity="0.7">
+                            <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+                        </circle>
+                        <!-- Círculos en la circunferencia -->
+                        <circle cx="175" cy="25" r="6" fill="#4A90E2" opacity="0.9">
+                            <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="175" cy="325" r="6" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                        </circle>
+                        <circle cx="25" cy="175" r="6" fill="#4A90E2" opacity="0.9">
+                            <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="325" cy="175" r="6" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                        </circle>
+                        <!-- Circuitos -->
+                        <path d="M50 150 Q80 130 100 150 T150 150 T200 150 Q220 170 250 150" fill="none" stroke="url(#circuitGradient)" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.9"/>
+                        <path d="M300 200 Q270 220 250 200 T200 200 T150 200 Q130 180 100 200" fill="none" stroke="url(#circuitGradient)" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.9"/>
+                        <path d="M150 50 Q170 80 150 100 T150 150 T150 200 Q130 230 150 250" fill="none" stroke="url(#circuitGradient)" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.9"/>
+                        <!-- Rectángulo central con texto "AI" centrado -->
+                        <rect x="150" y="150" width="50" height="50" rx="10" fill="#1A1A3D" stroke="#6B48FF" stroke-width="3" filter="url(#glow)"/>
+                        <text x="175" y="175" font-family="Montserrat" font-size="36" fill="#4A90E2" text-anchor="middle" alignment-baseline="middle" font-weight="700" filter="url(#glow)">
+                            AI
+                            <animate attributeName="opacity" values="1;0.7;1" dur="1s" repeatCount="indefinite"/>
+                        </text>
+                        <!-- Círculo pequeño dentro del rectángulo con animación -->
+                        <circle cx="150" cy="150" r="5" fill="#6B48FF" opacity="0.9">
+                            <animate attributeName="r" values="5;7;5" dur="1.5s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                </div>
+                <div class="ai-content">
+                    <button class="ai-optimize-btn">OPTIMIZA</button>
+                    <h2 class="ai-title">Aprovecha la IA para tu éxito empresarial</h2>
+                    <div class="ai-options">
+                        <div class="ai-option">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                            <strong>Aumente la eficacia y reduzca los costos con la automatización basada en IA</strong>
+                            <span class="arrow">→</span>
+                        </div>
+                        <div class="ai-option">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3h18M3 7h18M3 11h18M3 15h18M3 19h18"/>
+                                <path d="M21 3v18H3"/>
+                            </svg>
+                            <strong>Optimice las operaciones, minimice los errores y ahorre recursos</strong>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section class="testimonials">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">Testimonios</h2>
+            </div>
+            <!-- Sección de testimonios con movimiento marquee -->
+            <div class="testimonials-marquee">
+                <div class="testimonials-marquee-content">
+                    <!-- Testimonial 1: Silvia Martinez -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona3.jpg" alt="Foto de Silvia Martinez, Directora en Franchising Company">
+                            <div class="testimonial-author">
+                                <h4>Carolina Ramirez</h4>
+                                <p>Gerente de Procesos</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"La IA redujo en un 80% el tiempo de respuesta a clientes y optimizó nuestra comunicación."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 2: Lucas Ferreira -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona1.jpg" alt="Foto de Lucas Ferreira, Gerente de La Revestiría Comics">
+                            <div class="testimonial-author">
+                                <h4>Rodrigo Cadavid</h4>
+                                <p>Gerente de Atencion Al cliente</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Automatizamos WhatsApp y correos con IA, reduciendo la carga operativa en un 70%."</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+
+                    <!-- Testimonial 3: Horacio Borrat -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona2.jpg" alt="Foto de Horacio Borrat, Fundador de Escucha Tu Cuento">
+                            <div class="testimonial-author">
+                                <h4>Claudia Aristizabal</h4>
+                                <p>Fundadora Bolsos Bitacora</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Gracias a la IA, nuestras campañas son más personalizadas y la conversión aumentó un 60%."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 4: Ana Gómez -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona.jpg" alt="Foto de Ana Gómez, Directora de Marketing">
+                            <div class="testimonial-author">
+                                <h4>Alejandro Rios</h4>
+                                <p>Director logistico Petcare</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"La IA optimizó nuestra gestión de inventarios, reduciendo errores en un 72% y acelerando entregas."</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+
+                    <!-- Duplicados para efecto continuo -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona3.jpg" alt="Foto de Silvia Martinez, Directora en Franchising Company">
+                            <div class="testimonial-author">
+                                <h4>Carolina Ramirez</h4>
+                                <p>Gerente de Procesos</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"La IA redujo en un 80% el tiempo de respuesta a clientes y optimizó nuestra comunicación."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona1.jpg" alt="Foto de Lucas Ferreira, Gerente de La Revestiría Comics">
+                            <div class="testimonial-author">
+                                <h4>Rodrigo Cadavid</h4>
+                                <p>Gerente de Atencion Al cliente</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Automatizamos WhatsApp y correos con IA, reduciendo la carga operativa en un 70%."</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona2.jpg" alt="Foto de Horacio Borrat, Fundador de Escucha Tu Cuento">
+                            <div class="testimonial-author">
+                                <h4>Claudia Aristizabal</h4>
+                                <p>Fundadora Bolsos Bitacora</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Gracias a la IA, nuestras campañas son más personalizadas y la conversión aumentó un 60%."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="persona.jpg" alt="Foto de Ana Gómez, Directora de Marketing">
+                            <div class="testimonial-author">
+                                <h4>Alejandro Rios</h4>
+                                <p>Director logistico Petcare</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"La IA optimizó nuestra gestión de inventarios, reduciendo errores en un 72% y acelerando entregas."</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección Momentum al final -->
+        <section class="momentum-section">
+            <div class="momentum-content">
+                <h2><img src="logo.png" alt="Logo" style="vertical-align: middle; margin-right: 10px;">MOMENTUM</h2>
+            </div>
+        </section>
+    </main>
+
+    <div class="bottom-bar">
+        <div class="bottom-content">
+            <div class="bottom-links">
+                <a href="#">Desarrollo de Sitios Web</a>
+                <a href="#">eCommerce</a>
+                <a href="#">Growth Marketing</a>
+            </div>
+            <div class="social">
+                <a href="#" id="emailLink">
+                    <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFF" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+                <a href="#" id="phoneLink">
+                    <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFF" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-sidebar">
+        <a href="#" id="contactSidebarLink">Contacto</a>
+    </div>
+
+    <!-- Sección Hablemos -->
+    <section class="contact-section" id="hablemos">
+        <div class="contact-container">
+            <h2 class="contact-title">HABLEMOS <span class="arrow-down">↓</span></h2>
+            <div class="contact-top-row">
+                <div class="contact-top-item phone">
+                    <svg class="icon phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <a href="tel:+573186917263">+ (57) 318 691 72 63</a>
+                </div>
+                <div class="contact-top-item email">
+                    <svg class="icon email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:momentum@gmail.com">hola@proyectow.co</a>
+                </div>
+                <div class="contact-top-item location">
+                    <svg class="icon location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                    </svg>
+                    <span>Bogotá, Colombia.</span>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div class="contact-text">
+                    <h3>MOMENTUM</h3>
+                    <p>Abordamos cada proyecto con gran atención a la simplicidad, lo usable y los resultadosados. Un gran desarrollo digital es la combinación perfecta de forma y función que se centra en lo esencial y deja atrás lo frívolo.</p>
+                    <p class="highlight">No hay nada más poderoso que una idea a la que le ha llegado su tiempo.</p>
+                </div>
+                <div class="contact-right-column">
+                    <div class="contact-menu">
+                        <h4>Menú</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#soluciones">Soluciones</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-data">
+                        <h4>Datos de contacto</h4>
+                        <ul>
+                            <li>
+                                <svg class="icon phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <a href="tel:+573186917263">+ (57) 318 691 72 63</a>
+                            </li>
+                            <li>
+                                <svg class="icon email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <a href="mailto:hola@proyectow.co">hola@proyectow.co</a>
+                            </li>
+                            <li>
+                                <svg class="icon location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                                </svg>
+                                <span>Bogotá, Colombia.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram">
+                    <svg class="icon social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" stroke="#fff" stroke-width="1">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.317 3.608 1.292.974.974 1.23 2.242 1.292 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.317 2.633-1.292 3.608-.974.974-2.242 1.23-3.608 1.292-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.317-3.608-1.292-.974-.974-1.23-2.242-1.292-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.317-2.633 1.292-3.608.974-.974 2.242-1.23 3.608-1.292 1.266-.058 1.646-.07 4.85-.07m0-2.163c-3.259 0-3.67.014-4.947.072-1.294.059-2.526.273-3.465.61-1.013.36-1.865.831-2.74 1.706-1.026 1.026-1.346 2.015-1.706 2.74-.337.939-.551 2.171-.61 3.465-.058 1.277-.072 1.688-.072 4.947s.014 3.67.072 4.947c.059 1.294.273 2.526.61 3.465.36 1.013.831 1.865 1.706 2.74 1.026 1.026 2.015 1.346 2.74 1.706.939.337 2.171.551 3.465.61 1.277.058 1.688.072 4.947.072s3.67-.014 4.947-.072c1.294-.059 2.526-.273 3.465-.61 1.013-.36 1.865-.831 2.74-1.706 1.026-1.026 1.346-2.015 1.706-2.74.337-.939.551-2.171.61-3.465.058-1.277.072-1.688.072-4.947s-.014-3.67-.072-4.947c-.059-1.294-.273-2.526-.61-3.465-.36-1.013-.831-1.865-1.706-2.74-1.026-1.026-2.015-1.346-2.74-1.706-.939-.337-2.171-.551-3.465-.61-1.277-.058-1.688-.072-4.947-.072z"/>
+                        <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162m0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg class="icon social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" stroke="#fff" stroke-width="1">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.255-2.666-1.875-2.666-1.959 0-2.125 1.509-2.125 2.666v5.604h-3v-11h2.875v1.369h.041c.613-1.001 1.846-1.875 3.834-1.875 4.049 0 4.75 2.541 4.75 6.069v6.437z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript para manejar el deslizamiento de la barra
+        const moreDetails = document.getElementById('moreDetails');
+        const contactBar = document.getElementById('contactBar');
+        const closeBtn = document.getElementById('closeBtn');
+        const emailLink = document.getElementById('emailLink');
+        const phoneLink = document.getElementById('phoneLink');
+        const contactSidebarLink = document.getElementById('contactSidebarLink');
+
+        // Función para abrir la barra deslizante
+        const openContactBar = (e) => {
+            e.preventDefault();
+            contactBar.classList.add('active');
+        };
+
+        // Eventos de clic para abrir la barra
+        moreDetails.addEventListener('click', openContactBar);
+        emailLink.addEventListener('click', openContactBar);
+        phoneLink.addEventListener('click', openContactBar);
+        contactSidebarLink.addEventListener('click', openContactBar);
+
+        // Evento de clic para cerrar la barra
+        closeBtn.addEventListener('click', () => {
+            contactBar.classList.remove('active');
+        });
+
+        // JavaScript para manejar el despliegue de las soluciones
+        document.querySelectorAll('.solutions-toggle').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = toggle.getAttribute('data-target');
+                const solutionsList = document.getElementById(targetId);
+                solutionsList.classList.toggle('visible');
+            });
+        });
+
+        // JavaScript para arrastrar la fila de logos manualmente
+        const marqueeContent = document.getElementById('clientsMarqueeContent');
+        let isDragging = false;
+        let startX;
+        let currentTranslateX = 0;
+
+        // Iniciar el arrastre
+        marqueeContent.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX;
+            // Obtener la posición actual de translateX
+            const style = window.getComputedStyle(marqueeContent);
+            const transformValue = style.transform || style.webkitTransform;
+            currentTranslateX = transformValue.includes('matrix') 
+                ? parseFloat(transformValue.split(',')[4]) 
+                : parseFloat(transformValue.match(/translateX\(([-0-9.]+)px\)/i)?.[1] || 0);
+            marqueeContent.style.animationPlayState = 'paused'; // Pausar la animación
+            marqueeContent.style.transition = 'none'; // Desactivar transiciones durante el arrastre
+            e.preventDefault(); // Evitar selección de texto
+        });
+
+        // Mover mientras se arrastra
+        marqueeContent.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const currentX = e.pageX;
+            const diffX = currentX - startX;
+            marqueeContent.style.transform = `translateX(${currentTranslateX + diffX}px)`;
+        });
+
+        // Finalizar el arrastre
+        marqueeContent.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                // Obtener la posición final
+                const finalTransform = marqueeContent.style.transform;
+                currentTranslateX = parseFloat(finalTransform.match(/translateX\(([-0-9.]+)px\)/i)?.[1] || currentTranslateX);
+                marqueeContent.style.transition = 'transform 0.3s ease'; // Suavizar la transición al soltar
+                marqueeContent.style.transform = `translateX(${currentTranslateX}px)`;
+                // Reanudar la animación desde la nueva posición después de un breve retraso
+                setTimeout(() => {
+                    marqueeContent.style.animation = 'marquee-clients 30s linear infinite';
+                    marqueeContent.style.animationPlayState = 'running';
+                }, 50);
+            }
+        });
+
+        // Cancelar el arrastre si el mouse sale del área
+        marqueeContent.addEventListener('mouseleave', () => {
+            if (isDragging) {
+                isDragging = false;
+                const finalTransform = marqueeContent.style.transform;
+                currentTranslateX = parseFloat(finalTransform.match(/translateX\(([-0-9.]+)px\)/i)?.[1] || currentTranslateX);
+                marqueeContent.style.transition = 'transform 0.3s ease';
+                marqueeContent.style.transform = `translateX(${currentTranslateX}px)`;
+                setTimeout(() => {
+                    marqueeContent.style.animation = 'marquee-clients 30s linear infinite';
+                    marqueeContent.style.animationPlayState = 'running';
+                }, 50);
+            }
+        });
+
+        // Efecto de desplazamiento para el texto "MOMENTUM"
+        const momentumText = document.querySelector('.momentum-content h2');
+        let scrollPosition = 0;
+
+        function handleScroll() {
+            scrollPosition = window.scrollY; // Obtiene la posición del scroll
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight; // Máximo scroll posible
+            const moveDistance = (scrollPosition / maxScroll) * 100; // Rango de movimiento
+            // Calculamos el desplazamiento necesario para mover el texto
+            const textWidth = momentumText.offsetWidth; // Ancho del texto en píxeles
+            const windowWidth = window.innerWidth; // Ancho de la ventana
+            const initialOffset = windowWidth * 0.125; // Desplazamiento inicial (1/8 del ancho de la ventana, para la última "M")
+            const totalDistance = windowWidth - initialOffset; // Distancia total para mover el texto desde el borde derecho hasta el borde izquierdo
+            const translateX = (moveDistance / 100) * totalDistance; // Desplazamiento proporcional
+            momentumText.style.transform = `translate(-${translateX}px, -50%)`; // Movimiento de derecha a izquierda
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Asegura que el texto esté en la posición inicial al cargar la página
+        window.addEventListener('load', () => {
+            momentumText.style.transform = 'translate(0, -50%)';
+        });
+
+        // Actualiza el desplazamiento si la ventana cambia de tamaño
+        window.addEventListener('resize', handleScroll);
+
+        // JavaScript para manejar los eventos de los botones en Spline
+        document.addEventListener('DOMContentLoaded', () => {
+            const viewer = document.getElementById('spline-viewer');
+
+            if (viewer) {
+                // Espera a que el visor esté listo
+                viewer.addEventListener('load', () => {
+                    const spline = viewer.spline;
+
+                    // Verifica si el API de Spline está disponible
+                    if (spline) {
+                        // Encuentra los objetos de los botones en la escena
+                        const contactButton = spline.findObjectByName('Rectangle 2'); // Botón "Contacto"
+                        const projectsButton = spline.findObjectByName('Rectangle 3'); // Botón "Proyectos"
+
+                        // Función para desplazarse a una sección
+                        const scrollToSection = (sectionId) => {
+                            const section = document.querySelector(sectionId);
+                            if (section) {
+                                section.scrollIntoView({ behavior: 'smooth' });
+                            } else {
+                                console.error(`Sección con ID ${sectionId} no encontrada`);
+                            }
+                        };
+
+                        // Agrega evento al botón "Contacto"
+                        if (contactButton) {
+                            contactButton.on('mouseDown', () => {
+                                scrollToSection('#hablemos'); // Desplaza a la sección de contacto
+                            });
+                        } else {
+                            console.error('Botón "Contacto" (Rectangle 2) no encontrado');
+                        }
+
+                        // Agrega evento al botón "Proyectos"
+                        if (projectsButton) {
+                            projectsButton.on('mouseDown', () => {
+                                scrollToSection('#proyectos'); // Placeholder: desplaza a una sección de proyectos
+                                // Si no tienes una sección #proyectos, puedes usar otra acción, por ejemplo:
+                                // alert('Mostrar más proyectos aquí');
+                                // window.location.href = '/proyectos.html'; // Redirigir a otra página
+                            });
+                        } else {
+                            console.error('Botón "Proyectos" (Rectangle 3) no encontrado');
+                        }
+                    } else {
+                        console.error('API de Spline no disponible');
+                    }
+                });
+            } else {
+                console.error('No se encontró el elemento spline-viewer');
+            }
+        });
+    </script>
+</body>
+</html>
